@@ -1,6 +1,9 @@
-from src.priority_queue import PriorityQueue
-import unittest
+import sys
+import os
 
+sys.path.insert(0,os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
+from priority_queue import PriorityQueue
 class MutationTestCases(unittest.TestCase):
     def setUp(self):
         self.pq = PriorityQueue()
